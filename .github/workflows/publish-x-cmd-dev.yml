@@ -31,9 +31,9 @@ jobs:
         #   user/email: agent-zero/0@x-cmd.com
         # run: xws pub
 
-      # 使用runners外壳运行单个命令
-      # - name: Run a one-line script
-      #   run: echo Hello, world!
+      使用runners外壳运行单个命令
+      - name: Run x-cmd
+        run: x ls
 
       # 使用runners外壳运行一组命令
       # - name: Run a multi-line script
