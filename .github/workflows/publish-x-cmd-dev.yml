@@ -25,8 +25,8 @@ jobs:
       - name: install x-cmd && setup ssh publish
       # 在$GITHUB_WORKSPACE下检查您的存储库，以便您的作业可以访问它
         uses: cycle886/helloworld_action@v1
-        # with:
-        #   ref: main
+        with:
+          who_say_hello: cycle886
         #   sshkey: ${{ secrets.SSH_PRIVATE_KEY }}
         #   user/email: agent-zero/0@x-cmd.com
         # run: xws pub
