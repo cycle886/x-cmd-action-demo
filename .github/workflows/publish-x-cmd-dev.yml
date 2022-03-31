@@ -22,8 +22,8 @@ jobs:
 
     # 步骤表示将作为作业一部分执行的任务序列
     steps:
-      # - name: Checkout
-      #     uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
       
       - name: install x-cmd && setup ssh publish
       # 在$GITHUB_WORKSPACE下检查您的存储库，以便您的作业可以访问它
