@@ -45,13 +45,14 @@ jobs:
       #     echo test, and deploy your project.
       - name: commit
         run: |
-          git config --global user.email 1096481521@qq.com
-          git config --global user.name cycle886
-          git add .
-          git commit -m "update" -a
+          pwd
+      #     git config --global user.email 1096481521@qq.com
+      #     git config --global user.name cycle886
+      #     git add .
+      #     git commit -m "update" -a
       
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Push changes
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
 
