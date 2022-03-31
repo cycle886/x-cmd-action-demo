@@ -32,8 +32,8 @@ jobs:
         # run: xws pub
 
       #使用runners外壳运行单个命令
-      - name: Run x-cmd
-        run: x ls
+      # - name: Run x-cmd
+      #   run: x ls
 
       # 使用runners外壳运行一组命令
       # - name: Run a multi-line script
