@@ -5,10 +5,10 @@ name: 'github actions publish x-cmd/dev'
 # 控制工作流何时运行
 on:
   # 在推送或拉送请求事件上触发工作流，但仅适用于主分支
-  # push:
-  #   branches: [ main ]
-  # pull_request:
-  #   branches: [ main ]
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
   # 允许您从“操作”选项卡手动运行此工作流
   workflow_dispatch:
@@ -36,27 +36,4 @@ jobs:
         #   sshkey: ${{ secrets.SSH_PRIVATE_KEY }}
         #   user/email: agent-zero/0@x-cmd.com
         # run: xws pub
-
-      #使用runners外壳运行单个命令
-      # - name: Run x-cmd
-      #   run: x ls
-
-      # 使用runners外壳运行一组命令
-      # - name: Run a multi-line script
-      #   run: |
-      #     echo Add other actions to build,
-      #     echo test, and deploy your project.
-      # - name: commit
-      #   run: |
-      #     pwd
-      #     echo "测试" >> README.md
-      #     git config --global user.email 1096481521@qq.com
-      #     git config --global user.name cycle886
-      #     git add .
-      #     git commit -m "update" -a
-      
-      # - name: Push changes
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
 
