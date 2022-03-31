@@ -29,11 +29,7 @@ jobs:
       # 在$GITHUB_WORKSPACE下检查您的存储库，以便您的作业可以访问它
         uses: cycle886/helloworld_action@main
         with:
-          who_say_hello: cycle886
           user: cycle886
           email: 1096481521@qq.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        #   sshkey: ${{ secrets.SSH_PRIVATE_KEY }}
-        #   user/email: agent-zero/0@x-cmd.com
-        # run: xws pub
 
