@@ -30,6 +30,7 @@ jobs:
         uses: cycle886/helloworld_action@main
         with:
           who_say_hello: cycle886
+          user/email: cycle886/1096481521@qq.com
         #   sshkey: ${{ secrets.SSH_PRIVATE_KEY }}
         #   user/email: agent-zero/0@x-cmd.com
         # run: xws pub
@@ -43,17 +44,17 @@ jobs:
       #   run: |
       #     echo Add other actions to build,
       #     echo test, and deploy your project.
-      - name: commit
-        run: |
-          pwd
-          echo "测试" >> README.md
-          git config --global user.email 1096481521@qq.com
-          git config --global user.name cycle886
-          git add .
-          git commit -m "update" -a
+      # - name: commit
+      #   run: |
+      #     pwd
+      #     echo "测试" >> README.md
+      #     git config --global user.email 1096481521@qq.com
+      #     git config --global user.name cycle886
+      #     git add .
+      #     git commit -m "update" -a
       
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Push changes
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
 
