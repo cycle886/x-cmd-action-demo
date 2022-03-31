@@ -24,6 +24,7 @@ jobs:
     steps:
       - name: Checkout
           uses: actions/checkout@v2
+      
       - name: install x-cmd && setup ssh publish
       # 在$GITHUB_WORKSPACE下检查您的存储库，以便您的作业可以访问它
         uses: cycle886/helloworld_action@main
