@@ -46,6 +46,7 @@ jobs:
       - name: commit
         run: |
           pwd
+          echo "测试" >> README.md
           git config --global user.email 1096481521@qq.com
           git config --global user.name cycle886
           git add .
