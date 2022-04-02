@@ -27,7 +27,7 @@ jobs:
       
       - name: install x-cmd && setup ssh publish
       # 在$GITHUB_WORKSPACE下检查您的存储库，以便您的作业可以访问它
-        uses: cycle886/helloworld_action@main
+        uses: cycle886/helloworld_action
         with:
           user: cycle886
           email: 1096481521@qq.com
